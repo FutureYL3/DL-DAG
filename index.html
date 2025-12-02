@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Operator DAG</title>
   <style>
-    html, body, #cy {
+    html, body {
       width: 100%;
       height: 100%;
       margin: 0;
@@ -12,22 +12,58 @@
       overflow: hidden;
       font-family: sans-serif;
     }
+    #cy {
+      width: 100%;
+      height: 100%;
+      background: #111; /* 加个背景色方便肉眼判断区域是否渲染 */
+    }
+    #status {
+      position: fixed;
+      z-index: 9999;
+      top: 4px;
+      left: 4px;
+      padding: 4px 8px;
+      background: rgba(255,255,255,0.8);
+      font-size: 12px;
+      color: #000;
+      border-radius: 4px;
+    }
   </style>
   <!-- Cytoscape.js CDN -->
   <script src="https://unpkg.com/cytoscape@3/dist/cytoscape.min.js"></script>
 </head>
 <body>
+<div id="status">Loading...</div>
 <div id="cy"></div>
 
 <script>
+  // 简单检查：Cytoscape 是否加载成功
+  if (typeof cytoscape === 'undefined') {
+    document.getElementById('status').innerText = 'ERROR: cytoscape is not loaded';
+  } else {
+    document.getElementById('status').innerText = 'Cytoscape loaded, fetching graph.json...';
+  }
+
   // 加载 graph.json
   fetch('graph.json')
-    .then(resp => resp.json())
-    .then(data => {
-      const elements = [];
+    .then(function(resp) {
+      if (!resp.ok) {
+        throw new Error('HTTP ' + resp.status);
+      }
+      return resp.json();
+    })
+    .then(function(data) {
+      var status = document.getElementById('status');
+      status.innerText = 'graph.json loaded: ' +
+        data.nodes.length + ' nodes, ' +
+        data.edges.length + ' edges';
+
+      console.log('graph.json data:', data);
+
+      var elements = [];
 
       // 节点
-      data.nodes.forEach(n => {
+      data.nodes.forEach(function(n) {
         elements.push({
           data: {
             id: n.id,
@@ -40,7 +76,7 @@
       });
 
       // 边
-      data.edges.forEach(e => {
+      data.edges.forEach(function(e) {
         elements.push({
           data: {
             id: e.from + '->' + e.to,
@@ -50,7 +86,7 @@
         });
       });
 
-      const cy = cytoscape({
+      var cy = cytoscape({
         container: document.getElementById('cy'),
         elements: elements,
         style: [
@@ -63,7 +99,8 @@
               'font-size': 10,
               'background-color': '#8bc34a',
               'border-width': 1,
-              'border-color': '#333'
+              'border-color': '#333',
+              'color': '#000'
             }
           },
           {
@@ -78,14 +115,15 @@
           }
         ],
         layout: {
-          name: 'cose',  // 自动布局（力导向）
-          animate: false
+          name: 'breadthfirst',   // 拓扑布局
+          directed: true,
+          padding: 30
         }
       });
 
       // 点击节点时展示详细信息
       cy.on('tap', 'node', function (evt) {
-        const d = evt.target.data();
+        var d = evt.target.data();
         alert(
           'id: '   + d.id   + '\n' +
           'op: '   + d.op   + '\n' +
@@ -94,6 +132,11 @@
           'dtype: ' + d.dtype
         );
       });
+    })
+    .catch(function(err) {
+      console.error('Error loading graph.json or rendering graph:', err);
+      document.getElementById('status').innerText =
+        'ERROR: ' + err.toString();
     });
 </script>
 </body>
