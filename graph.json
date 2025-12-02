@@ -1,0 +1,35 @@
+{
+  "nodes": [
+    {
+      "id": "linear",
+      "op": "torch.ops.aten.linear.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 256])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "relu",
+      "op": "torch.ops.aten.relu.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 256])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "linear_1",
+      "op": "torch.ops.aten.linear.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 10])",
+      "dtype": "torch.float32"
+    }
+  ],
+  "edges": [
+    {
+      "from": "torch.ops.aten.linear.default",
+      "to": "torch.ops.aten.relu.default"
+    },
+    {
+      "from": "torch.ops.aten.relu.default",
+      "to": "torch.ops.aten.linear.default"
+    }
+  ]
+}
