@@ -71,8 +71,8 @@ graph_json = {
     ],
     "edges": [
         {
-            "from": e.from_node.op,
-            "to": e.to_node.op,
+            "from": e.from_node.id,
+            "to": e.to_node.id,
         }
         for e in Graph.edges
     ],
