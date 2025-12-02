@@ -24,12 +24,12 @@
   ],
   "edges": [
     {
-      "from": "torch.ops.aten.linear.default",
-      "to": "torch.ops.aten.relu.default"
+      "from": "linear",
+      "to": "relu"
     },
     {
-      "from": "torch.ops.aten.relu.default",
-      "to": "torch.ops.aten.linear.default"
+      "from": "relu",
+      "to": "linear_1"
     }
   ]
 }
