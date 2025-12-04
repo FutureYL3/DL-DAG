@@ -1,0 +1,804 @@
+{
+  "nodes": [
+    {
+      "id": "x",
+      "op": "input",
+      "type": null,
+      "shape": "torch.Size([1, 3, 224, 224])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "conv2d",
+      "op": "torch.ops.aten.conv2d.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 64, 112, 112])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "batch_norm",
+      "op": "torch.ops.aten.batch_norm.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 64, 112, 112])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "relu_",
+      "op": "torch.ops.aten.relu_.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 64, 112, 112])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "max_pool2d",
+      "op": "torch.ops.aten.max_pool2d.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 64, 56, 56])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "conv2d_1",
+      "op": "torch.ops.aten.conv2d.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 64, 56, 56])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "batch_norm_1",
+      "op": "torch.ops.aten.batch_norm.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 64, 56, 56])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "relu__1",
+      "op": "torch.ops.aten.relu_.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 64, 56, 56])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "conv2d_2",
+      "op": "torch.ops.aten.conv2d.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 64, 56, 56])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "batch_norm_2",
+      "op": "torch.ops.aten.batch_norm.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 64, 56, 56])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "add__3",
+      "op": "torch.ops.aten.add_.Tensor",
+      "type": "call_function",
+      "shape": "torch.Size([1, 64, 56, 56])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "relu__2",
+      "op": "torch.ops.aten.relu_.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 64, 56, 56])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "conv2d_3",
+      "op": "torch.ops.aten.conv2d.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 64, 56, 56])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "batch_norm_3",
+      "op": "torch.ops.aten.batch_norm.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 64, 56, 56])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "relu__3",
+      "op": "torch.ops.aten.relu_.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 64, 56, 56])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "conv2d_4",
+      "op": "torch.ops.aten.conv2d.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 64, 56, 56])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "batch_norm_4",
+      "op": "torch.ops.aten.batch_norm.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 64, 56, 56])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "add__6",
+      "op": "torch.ops.aten.add_.Tensor",
+      "type": "call_function",
+      "shape": "torch.Size([1, 64, 56, 56])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "relu__4",
+      "op": "torch.ops.aten.relu_.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 64, 56, 56])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "conv2d_5",
+      "op": "torch.ops.aten.conv2d.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 128, 28, 28])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "batch_norm_5",
+      "op": "torch.ops.aten.batch_norm.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 128, 28, 28])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "relu__5",
+      "op": "torch.ops.aten.relu_.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 128, 28, 28])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "conv2d_6",
+      "op": "torch.ops.aten.conv2d.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 128, 28, 28])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "batch_norm_6",
+      "op": "torch.ops.aten.batch_norm.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 128, 28, 28])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "conv2d_7",
+      "op": "torch.ops.aten.conv2d.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 128, 28, 28])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "batch_norm_7",
+      "op": "torch.ops.aten.batch_norm.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 128, 28, 28])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "add__10",
+      "op": "torch.ops.aten.add_.Tensor",
+      "type": "call_function",
+      "shape": "torch.Size([1, 128, 28, 28])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "relu__6",
+      "op": "torch.ops.aten.relu_.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 128, 28, 28])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "conv2d_8",
+      "op": "torch.ops.aten.conv2d.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 128, 28, 28])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "batch_norm_8",
+      "op": "torch.ops.aten.batch_norm.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 128, 28, 28])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "relu__7",
+      "op": "torch.ops.aten.relu_.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 128, 28, 28])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "conv2d_9",
+      "op": "torch.ops.aten.conv2d.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 128, 28, 28])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "batch_norm_9",
+      "op": "torch.ops.aten.batch_norm.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 128, 28, 28])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "add__13",
+      "op": "torch.ops.aten.add_.Tensor",
+      "type": "call_function",
+      "shape": "torch.Size([1, 128, 28, 28])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "relu__8",
+      "op": "torch.ops.aten.relu_.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 128, 28, 28])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "conv2d_10",
+      "op": "torch.ops.aten.conv2d.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 256, 14, 14])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "batch_norm_10",
+      "op": "torch.ops.aten.batch_norm.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 256, 14, 14])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "relu__9",
+      "op": "torch.ops.aten.relu_.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 256, 14, 14])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "conv2d_11",
+      "op": "torch.ops.aten.conv2d.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 256, 14, 14])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "batch_norm_11",
+      "op": "torch.ops.aten.batch_norm.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 256, 14, 14])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "conv2d_12",
+      "op": "torch.ops.aten.conv2d.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 256, 14, 14])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "batch_norm_12",
+      "op": "torch.ops.aten.batch_norm.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 256, 14, 14])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "add__17",
+      "op": "torch.ops.aten.add_.Tensor",
+      "type": "call_function",
+      "shape": "torch.Size([1, 256, 14, 14])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "relu__10",
+      "op": "torch.ops.aten.relu_.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 256, 14, 14])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "conv2d_13",
+      "op": "torch.ops.aten.conv2d.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 256, 14, 14])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "batch_norm_13",
+      "op": "torch.ops.aten.batch_norm.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 256, 14, 14])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "relu__11",
+      "op": "torch.ops.aten.relu_.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 256, 14, 14])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "conv2d_14",
+      "op": "torch.ops.aten.conv2d.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 256, 14, 14])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "batch_norm_14",
+      "op": "torch.ops.aten.batch_norm.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 256, 14, 14])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "add__20",
+      "op": "torch.ops.aten.add_.Tensor",
+      "type": "call_function",
+      "shape": "torch.Size([1, 256, 14, 14])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "relu__12",
+      "op": "torch.ops.aten.relu_.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 256, 14, 14])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "conv2d_15",
+      "op": "torch.ops.aten.conv2d.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 512, 7, 7])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "batch_norm_15",
+      "op": "torch.ops.aten.batch_norm.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 512, 7, 7])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "relu__13",
+      "op": "torch.ops.aten.relu_.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 512, 7, 7])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "conv2d_16",
+      "op": "torch.ops.aten.conv2d.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 512, 7, 7])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "batch_norm_16",
+      "op": "torch.ops.aten.batch_norm.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 512, 7, 7])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "conv2d_17",
+      "op": "torch.ops.aten.conv2d.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 512, 7, 7])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "batch_norm_17",
+      "op": "torch.ops.aten.batch_norm.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 512, 7, 7])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "add__24",
+      "op": "torch.ops.aten.add_.Tensor",
+      "type": "call_function",
+      "shape": "torch.Size([1, 512, 7, 7])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "relu__14",
+      "op": "torch.ops.aten.relu_.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 512, 7, 7])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "conv2d_18",
+      "op": "torch.ops.aten.conv2d.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 512, 7, 7])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "batch_norm_18",
+      "op": "torch.ops.aten.batch_norm.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 512, 7, 7])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "relu__15",
+      "op": "torch.ops.aten.relu_.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 512, 7, 7])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "conv2d_19",
+      "op": "torch.ops.aten.conv2d.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 512, 7, 7])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "batch_norm_19",
+      "op": "torch.ops.aten.batch_norm.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 512, 7, 7])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "add__27",
+      "op": "torch.ops.aten.add_.Tensor",
+      "type": "call_function",
+      "shape": "torch.Size([1, 512, 7, 7])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "relu__16",
+      "op": "torch.ops.aten.relu_.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 512, 7, 7])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "adaptive_avg_pool2d",
+      "op": "torch.ops.aten.adaptive_avg_pool2d.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 512, 1, 1])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "flatten",
+      "op": "torch.ops.aten.flatten.using_ints",
+      "type": "call_function",
+      "shape": "torch.Size([1, 512])",
+      "dtype": "torch.float32"
+    },
+    {
+      "id": "linear",
+      "op": "torch.ops.aten.linear.default",
+      "type": "call_function",
+      "shape": "torch.Size([1, 1000])",
+      "dtype": "torch.float32"
+    }
+  ],
+  "edges": [
+    {
+      "from": "x",
+      "to": "conv2d"
+    },
+    {
+      "from": "conv2d",
+      "to": "batch_norm"
+    },
+    {
+      "from": "batch_norm",
+      "to": "relu_"
+    },
+    {
+      "from": "relu_",
+      "to": "max_pool2d"
+    },
+    {
+      "from": "max_pool2d",
+      "to": "conv2d_1"
+    },
+    {
+      "from": "conv2d_1",
+      "to": "batch_norm_1"
+    },
+    {
+      "from": "batch_norm_1",
+      "to": "relu__1"
+    },
+    {
+      "from": "relu__1",
+      "to": "conv2d_2"
+    },
+    {
+      "from": "conv2d_2",
+      "to": "batch_norm_2"
+    },
+    {
+      "from": "batch_norm_2",
+      "to": "add__3"
+    },
+    {
+      "from": "max_pool2d",
+      "to": "add__3"
+    },
+    {
+      "from": "add__3",
+      "to": "relu__2"
+    },
+    {
+      "from": "relu__2",
+      "to": "conv2d_3"
+    },
+    {
+      "from": "conv2d_3",
+      "to": "batch_norm_3"
+    },
+    {
+      "from": "batch_norm_3",
+      "to": "relu__3"
+    },
+    {
+      "from": "relu__3",
+      "to": "conv2d_4"
+    },
+    {
+      "from": "conv2d_4",
+      "to": "batch_norm_4"
+    },
+    {
+      "from": "batch_norm_4",
+      "to": "add__6"
+    },
+    {
+      "from": "relu__2",
+      "to": "add__6"
+    },
+    {
+      "from": "add__6",
+      "to": "relu__4"
+    },
+    {
+      "from": "relu__4",
+      "to": "conv2d_5"
+    },
+    {
+      "from": "conv2d_5",
+      "to": "batch_norm_5"
+    },
+    {
+      "from": "batch_norm_5",
+      "to": "relu__5"
+    },
+    {
+      "from": "relu__5",
+      "to": "conv2d_6"
+    },
+    {
+      "from": "conv2d_6",
+      "to": "batch_norm_6"
+    },
+    {
+      "from": "relu__4",
+      "to": "conv2d_7"
+    },
+    {
+      "from": "conv2d_7",
+      "to": "batch_norm_7"
+    },
+    {
+      "from": "batch_norm_6",
+      "to": "add__10"
+    },
+    {
+      "from": "batch_norm_7",
+      "to": "add__10"
+    },
+    {
+      "from": "add__10",
+      "to": "relu__6"
+    },
+    {
+      "from": "relu__6",
+      "to": "conv2d_8"
+    },
+    {
+      "from": "conv2d_8",
+      "to": "batch_norm_8"
+    },
+    {
+      "from": "batch_norm_8",
+      "to": "relu__7"
+    },
+    {
+      "from": "relu__7",
+      "to": "conv2d_9"
+    },
+    {
+      "from": "conv2d_9",
+      "to": "batch_norm_9"
+    },
+    {
+      "from": "batch_norm_9",
+      "to": "add__13"
+    },
+    {
+      "from": "relu__6",
+      "to": "add__13"
+    },
+    {
+      "from": "add__13",
+      "to": "relu__8"
+    },
+    {
+      "from": "relu__8",
+      "to": "conv2d_10"
+    },
+    {
+      "from": "conv2d_10",
+      "to": "batch_norm_10"
+    },
+    {
+      "from": "batch_norm_10",
+      "to": "relu__9"
+    },
+    {
+      "from": "relu__9",
+      "to": "conv2d_11"
+    },
+    {
+      "from": "conv2d_11",
+      "to": "batch_norm_11"
+    },
+    {
+      "from": "relu__8",
+      "to": "conv2d_12"
+    },
+    {
+      "from": "conv2d_12",
+      "to": "batch_norm_12"
+    },
+    {
+      "from": "batch_norm_11",
+      "to": "add__17"
+    },
+    {
+      "from": "batch_norm_12",
+      "to": "add__17"
+    },
+    {
+      "from": "add__17",
+      "to": "relu__10"
+    },
+    {
+      "from": "relu__10",
+      "to": "conv2d_13"
+    },
+    {
+      "from": "conv2d_13",
+      "to": "batch_norm_13"
+    },
+    {
+      "from": "batch_norm_13",
+      "to": "relu__11"
+    },
+    {
+      "from": "relu__11",
+      "to": "conv2d_14"
+    },
+    {
+      "from": "conv2d_14",
+      "to": "batch_norm_14"
+    },
+    {
+      "from": "batch_norm_14",
+      "to": "add__20"
+    },
+    {
+      "from": "relu__10",
+      "to": "add__20"
+    },
+    {
+      "from": "add__20",
+      "to": "relu__12"
+    },
+    {
+      "from": "relu__12",
+      "to": "conv2d_15"
+    },
+    {
+      "from": "conv2d_15",
+      "to": "batch_norm_15"
+    },
+    {
+      "from": "batch_norm_15",
+      "to": "relu__13"
+    },
+    {
+      "from": "relu__13",
+      "to": "conv2d_16"
+    },
+    {
+      "from": "conv2d_16",
+      "to": "batch_norm_16"
+    },
+    {
+      "from": "relu__12",
+      "to": "conv2d_17"
+    },
+    {
+      "from": "conv2d_17",
+      "to": "batch_norm_17"
+    },
+    {
+      "from": "batch_norm_16",
+      "to": "add__24"
+    },
+    {
+      "from": "batch_norm_17",
+      "to": "add__24"
+    },
+    {
+      "from": "add__24",
+      "to": "relu__14"
+    },
+    {
+      "from": "relu__14",
+      "to": "conv2d_18"
+    },
+    {
+      "from": "conv2d_18",
+      "to": "batch_norm_18"
+    },
+    {
+      "from": "batch_norm_18",
+      "to": "relu__15"
+    },
+    {
+      "from": "relu__15",
+      "to": "conv2d_19"
+    },
+    {
+      "from": "conv2d_19",
+      "to": "batch_norm_19"
+    },
+    {
+      "from": "batch_norm_19",
+      "to": "add__27"
+    },
+    {
+      "from": "relu__14",
+      "to": "add__27"
+    },
+    {
+      "from": "add__27",
+      "to": "relu__16"
+    },
+    {
+      "from": "relu__16",
+      "to": "adaptive_avg_pool2d"
+    },
+    {
+      "from": "adaptive_avg_pool2d",
+      "to": "flatten"
+    },
+    {
+      "from": "flatten",
+      "to": "linear"
+    }
+  ]
+}

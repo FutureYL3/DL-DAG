@@ -1,6 +1,13 @@
 {
   "nodes": [
     {
+      "id": "x",
+      "op": "input",
+      "type": null,
+      "shape": "torch.Size([1, 784])",
+      "dtype": "torch.float32"
+    },
+    {
       "id": "linear",
       "op": "torch.ops.aten.linear.default",
       "type": "call_function",
@@ -23,6 +30,10 @@
     }
   ],
   "edges": [
+    {
+      "from": "x",
+      "to": "linear"
+    },
     {
       "from": "linear",
       "to": "relu"
