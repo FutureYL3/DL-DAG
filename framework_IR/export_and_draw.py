@@ -1,5 +1,8 @@
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 import json
-import torch
 from torch import nn
 from torch.export import export
 import torch.fx as fx
@@ -44,9 +47,38 @@ def export_and_draw_model(model: nn.Module, example_input: tuple, output_name: s
         if str(dtype) == 'torch.int64' and shape is not None and len(shape) == 0:
             continue
 
-        # pytorch metadata assert
-        if str(node.target) == 'aten._assert_tensor_metadata.default':
+        # Filter out compiler metadata and side-effect nodes
+        target_str = str(node.target)
+        ignore_patterns = [
+            "lazy_load_decompositions",
+            "_vmap_increment_nesting",
+            "_vmap_decrement_nesting",
+            "torch__dynamo__trace_wrapped_higher_order_op",
+            "function_const",
+            "_remove_batch_dim",
+            "aten._assert_tensor_metadata"
+        ]
+        if any(pattern in target_str for pattern in ignore_patterns):
             continue
+
+        # GPT-2 specific filtering: remove redundant mask generation and position_id logic
+        if "gpt2" in output_name:
+            gpt2_ignore_ops = [
+                "aten.arange.default",  # Redundant position_ids generation
+                "aten.add_.Tensor",     # Redundant position_ids generation
+                "aten.new_ones",        # Mask generation
+                "aten.le",              # Mask generation
+                "aten.eq",              # Mask generation
+                "aten.expand",          # Mask generation
+                "aten.__and__"          # Mask generation
+            ]
+            if any(op in target_str for op in gpt2_ignore_ops):
+                continue
+            
+            # Filter 'to' operators used in mask generation (usually bool or converting mask)
+            # Valid 'to' in GPT2 usually converts float32 embeddings or logits
+            if "aten.to" in target_str and str(dtype) == "torch.bool":
+                continue
 
         if node.op == 'placeholder':
             # Usually 'x' or parameters
@@ -77,16 +109,34 @@ def export_and_draw_model(model: nn.Module, example_input: tuple, output_name: s
 
     # 3. Build Edges
     for node in dag.nodes:
+        # Helper function to recursively find nodes in args/kwargs
+        def find_nodes(obj):
+            if isinstance(obj, fx.Node):
+                yield obj
+            elif isinstance(obj, (list, tuple)):
+                for item in obj:
+                    yield from find_nodes(item)
+            elif isinstance(obj, dict):
+                for item in obj.values():
+                    yield from find_nodes(item)
+
+        # Check args
         for arg in node.args:
-            # arg can be a Node object in FX, but here we need the name if it's an FX Node
-            # In FX, node.args contains fx.Node objects.
-            # The original script: if n.id == arg.name:
-            arg_name = arg.name if isinstance(arg, fx.Node) else str(arg)
-            
-            for n in dag.nodes:
-                if n.id == arg_name:
-                    edge = Edge(from_node=n, to_node=node)
-                    dag.addEdge(edge)
+            for arg_node in find_nodes(arg):
+                arg_name = arg_node.name
+                for n in dag.nodes:
+                    if n.id == arg_name:
+                        edge = Edge(from_node=n, to_node=node)
+                        dag.addEdge(edge)
+        
+        # Check kwargs
+        for key, arg in node.kwargs.items():
+            for arg_node in find_nodes(arg):
+                arg_name = arg_node.name
+                for n in dag.nodes:
+                    if n.id == arg_name:
+                        edge = Edge(from_node=n, to_node=node)
+                        dag.addEdge(edge)
 
     # 4. Connect disconnected nodes to input (Original script logic)
     # Find the input node
@@ -134,8 +184,9 @@ def export_and_draw_model(model: nn.Module, example_input: tuple, output_name: s
     print(f"Saved DAG JSON to {json_filename}")
 
     # 6. Render with Graphviz
-    dot = Digraph("OperatorDAG", format="png")
-    dot.attr("graph", rankdir="LR")
+    # Use sfdp engine for large graphs (faster layout for many nodes)
+    dot = Digraph("OperatorDAG", format="svg", engine="sfdp")
+    dot.attr("graph", overlap="false", splines="true")
     dot.attr("node", shape="box", fontsize="10")
 
     # Add nodes

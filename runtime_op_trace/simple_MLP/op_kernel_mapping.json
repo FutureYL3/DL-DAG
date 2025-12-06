@@ -1,0 +1,35 @@
+[
+  {
+    "op_name": "aten::linear",
+    "num_kernels": 2,
+    "kernels": [
+      {
+        "kernel_name": "std::enable_if<!(false), void>::type internal::gemvx::kernel<int, int, float, float, float, float, false, true, true, false, 7, false, cublasGemvParamsEx<int, cublasGemvTensorStridedBatched<float const>, cublasGemvTensorStridedBatched<float const>, cublasGemvTensorStridedBatched<float>, float> >(cublasGemvParamsEx<int, cublasGemvTensorStridedBatched<float const>, cublasGemvTensorStridedBatched<float const>, cublasGemvTensorStridedBatched<float>, float>)",
+        "kernel_ts": 5543378659397.196,
+        "kernel_dur": 4.576,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "std::enable_if<!(false), void>::type internal::gemvx::kernel<int, int, float, float, float, float, false, true, true, false, 7, false, cublasGemvParamsEx<int, cublasGemvTensorStridedBatched<float const>, cublasGemvTensorStridedBatched<float const>, cublasGemvTensorStridedBatched<float>, float> >(cublasGemvParamsEx<int, cublasGemvTensorStridedBatched<float const>, cublasGemvTensorStridedBatched<float const>, cublasGemvTensorStridedBatched<float>, float>)",
+        "kernel_ts": 5543378677643.546,
+        "kernel_dur": 2.944,
+        "device": 0,
+        "stream": 7
+      }
+    ]
+  },
+  {
+    "op_name": "aten::relu",
+    "num_kernels": 1,
+    "kernels": [
+      {
+        "kernel_name": "void at::native::vectorized_elementwise_kernel<4, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul> >(int, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul>)",
+        "kernel_ts": 5543378677313.302,
+        "kernel_dur": 2.144,
+        "device": 0,
+        "stream": 7
+      }
+    ]
+  }
+]

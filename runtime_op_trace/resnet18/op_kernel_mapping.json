@@ -1,0 +1,758 @@
+[
+  {
+    "op_name": "aten::conv2d",
+    "num_kernels": 54,
+    "kernels": [
+      {
+        "kernel_name": "void implicit_convolve_sgemm<float, float, 1024, 5, 5, 3, 3, 3, 1, false, false, true>(int, int, int, float const*, int, float*, float const*, kernel_conv_params, unsigned long long, int, float, float, int, float const*, float const*, bool, bool, int, int)",
+        "kernel_ts": 5543702506624.424,
+        "kernel_dur": 20.32,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernelDataType_t)2>(cudnn::engines_precompiled::nchw2nhwc_params_t<float>, float const*, float*)",
+        "kernel_ts": 5543702558269.48,
+        "kernel_dur": 2.849,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernelDataType_t)2>(cudnn::engines_precompiled::nchw2nhwc_params_t<float>, float const*, float*)",
+        "kernel_ts": 5543702558283.081,
+        "kernel_dur": 3.072,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "sm80_xmma_fprop_implicit_gemm_tf32f32_tf32f32_f32_nhwckrsc_nchw_tilesize64x32x64_stage5_warpsize2x2x1_g1_tensor16x8x8_alignc4_execute_kernel__5x_cudnn",
+        "kernel_ts": 5543702558817.711,
+        "kernel_dur": 8.992,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernelDataType_t)2>(cudnn::engines_precompiled::nchw2nhwc_params_t<float>, float const*, float*)",
+        "kernel_ts": 5543702559311.061,
+        "kernel_dur": 2.816,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernelDataType_t)2>(cudnn::engines_precompiled::nchw2nhwc_params_t<float>, float const*, float*)",
+        "kernel_ts": 5543702559318.229,
+        "kernel_dur": 2.784,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "sm80_xmma_fprop_implicit_gemm_tf32f32_tf32f32_f32_nhwckrsc_nchw_tilesize64x32x64_stage5_warpsize2x2x1_g1_tensor16x8x8_alignc4_execute_kernel__5x_cudnn",
+        "kernel_ts": 5543702559335.125,
+        "kernel_dur": 8.704,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernelDataType_t)2>(cudnn::engines_precompiled::nchw2nhwc_params_t<float>, float const*, float*)",
+        "kernel_ts": 5543702570690.875,
+        "kernel_dur": 2.592,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernelDataType_t)2>(cudnn::engines_precompiled::nchw2nhwc_params_t<float>, float const*, float*)",
+        "kernel_ts": 5543702570697.915,
+        "kernel_dur": 2.912,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "sm80_xmma_fprop_implicit_gemm_tf32f32_tf32f32_f32_nhwckrsc_nchw_tilesize64x32x64_stage5_warpsize2x2x1_g1_tensor16x8x8_alignc4_execute_kernel__5x_cudnn",
+        "kernel_ts": 5543702570716.283,
+        "kernel_dur": 9.12,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernelDataType_t)2>(cudnn::engines_precompiled::nchw2nhwc_params_t<float>, float const*, float*)",
+        "kernel_ts": 5543702570896.893,
+        "kernel_dur": 2.624,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernelDataType_t)2>(cudnn::engines_precompiled::nchw2nhwc_params_t<float>, float const*, float*)",
+        "kernel_ts": 5543702570901.821,
+        "kernel_dur": 2.848,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "sm80_xmma_fprop_implicit_gemm_tf32f32_tf32f32_f32_nhwckrsc_nchw_tilesize64x32x64_stage5_warpsize2x2x1_g1_tensor16x8x8_alignc4_execute_kernel__5x_cudnn",
+        "kernel_ts": 5543702570913.054,
+        "kernel_dur": 8.639,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernelDataType_t)2>(cudnn::engines_precompiled::nchw2nhwc_params_t<float>, float const*, float*)",
+        "kernel_ts": 5543702572921.973,
+        "kernel_dur": 2.56,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernelDataType_t)2>(cudnn::engines_precompiled::nchw2nhwc_params_t<float>, float const*, float*)",
+        "kernel_ts": 5543702572929.525,
+        "kernel_dur": 2.912,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "sm80_xmma_fprop_implicit_gemm_tf32f32_tf32f32_f32_nhwckrsc_nchw_tilesize64x32x64_stage5_warpsize2x2x1_g1_tensor16x8x8_alignc4_execute_kernel__5x_cudnn",
+        "kernel_ts": 5543702572943.189,
+        "kernel_dur": 8.513,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernelDataType_t)2>(cudnn::engines_precompiled::nchw2nhwc_params_t<float>, float const*, float*)",
+        "kernel_ts": 5543702574690.346,
+        "kernel_dur": 2.368,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernelDataType_t)2>(cudnn::engines_precompiled::nchw2nhwc_params_t<float>, float const*, float*)",
+        "kernel_ts": 5543702574697.098,
+        "kernel_dur": 3.2,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "sm80_xmma_fprop_implicit_gemm_tf32f32_tf32f32_f32_nhwckrsc_nchw_tilesize64x32x64_stage5_warpsize2x2x1_g1_tensor16x8x8_alignc4_execute_kernel__5x_cudnn",
+        "kernel_ts": 5543702574710.698,
+        "kernel_dur": 11.52,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "sm80_xmma_fprop_implicit_gemm_f32f32_f32f32_f32_nchwkcrs_nchw_tilesize32x32x8_stage3_warpsize1x2x1_g1_ffma_aligna4_alignc4_execute_kernel__5x_cudnn",
+        "kernel_ts": 5543702577688.846,
+        "kernel_dur": 6.016,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernelDataType_t)2>(cudnn::engines_precompiled::nchw2nhwc_params_t<float>, float const*, float*)",
+        "kernel_ts": 5543702578038.577,
+        "kernel_dur": 2.465,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernelDataType_t)2>(cudnn::engines_precompiled::nchw2nhwc_params_t<float>, float const*, float*)",
+        "kernel_ts": 5543702578044.69,
+        "kernel_dur": 3.2,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "sm80_xmma_fprop_implicit_gemm_tf32f32_tf32f32_f32_nhwckrsc_nchw_tilesize64x32x64_stage5_warpsize2x2x1_g1_tensor16x8x8_alignc4_execute_kernel__5x_cudnn",
+        "kernel_ts": 5543702578062.418,
+        "kernel_dur": 11.904,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernelDataType_t)2>(cudnn::engines_precompiled::nchw2nhwc_params_t<float>, float const*, float*)",
+        "kernel_ts": 5543702578200.403,
+        "kernel_dur": 2.465,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernelDataType_t)2>(cudnn::engines_precompiled::nchw2nhwc_params_t<float>, float const*, float*)",
+        "kernel_ts": 5543702578204.723,
+        "kernel_dur": 3.073,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "sm80_xmma_fprop_implicit_gemm_tf32f32_tf32f32_f32_nhwckrsc_nchw_tilesize64x32x64_stage5_warpsize2x2x1_g1_tensor16x8x8_alignc4_execute_kernel__5x_cudnn",
+        "kernel_ts": 5543702578214.964,
+        "kernel_dur": 11.968,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernelDataType_t)2>(cudnn::engines_precompiled::nchw2nhwc_params_t<float>, float const*, float*)",
+        "kernel_ts": 5543702579899.432,
+        "kernel_dur": 2.335,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernelDataType_t)2>(cudnn::engines_precompiled::nchw2nhwc_params_t<float>, float const*, float*)",
+        "kernel_ts": 5543702579906.568,
+        "kernel_dur": 3.808,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "sm80_xmma_fprop_implicit_gemm_tf32f32_tf32f32_f32_nhwckrsc_nchw_tilesize64x32x64_stage5_warpsize2x2x1_g1_tensor16x8x8_alignc4_execute_kernel__5x_cudnn",
+        "kernel_ts": 5543702579920.616,
+        "kernel_dur": 12.064,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernelDataType_t)2>(cudnn::engines_precompiled::nchw2nhwc_params_t<float>, float const*, float*)",
+        "kernel_ts": 5543702581571.419,
+        "kernel_dur": 2.273,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernelDataType_t)2>(cudnn::engines_precompiled::nchw2nhwc_params_t<float>, float const*, float*)",
+        "kernel_ts": 5543702581578.363,
+        "kernel_dur": 5.408,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "sm80_xmma_fprop_implicit_gemm_tf32f32_tf32f32_f32_nhwckrsc_nchw_tilesize64x32x64_stage5_warpsize2x2x1_g1_tensor16x8x8_alignc4_execute_kernel__5x_cudnn",
+        "kernel_ts": 5543702581601.436,
+        "kernel_dur": 14.144,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "sm80_xmma_fprop_implicit_gemm_f32f32_f32f32_f32_nchwkcrs_nchw_tilesize32x32x8_stage3_warpsize1x2x1_g1_ffma_aligna4_alignc4_execute_kernel__5x_cudnn",
+        "kernel_ts": 5543702583215.279,
+        "kernel_dur": 8.288,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernelDataType_t)2>(cudnn::engines_precompiled::nchw2nhwc_params_t<float>, float const*, float*)",
+        "kernel_ts": 5543702583495.73,
+        "kernel_dur": 2.016,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernelDataType_t)2>(cudnn::engines_precompiled::nchw2nhwc_params_t<float>, float const*, float*)",
+        "kernel_ts": 5543702583502.002,
+        "kernel_dur": 5.76,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "sm80_xmma_fprop_implicit_gemm_tf32f32_tf32f32_f32_nhwckrsc_nchw_tilesize64x32x64_stage5_warpsize2x2x1_g1_tensor16x8x8_alignc4_execute_kernel__5x_cudnn",
+        "kernel_ts": 5543702583524.018,
+        "kernel_dur": 14.593,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernelDataType_t)2>(cudnn::engines_precompiled::nchw2nhwc_params_t<float>, float const*, float*)",
+        "kernel_ts": 5543702583655.508,
+        "kernel_dur": 2.24,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernelDataType_t)2>(cudnn::engines_precompiled::nchw2nhwc_params_t<float>, float const*, float*)",
+        "kernel_ts": 5543702583660.18,
+        "kernel_dur": 5.664,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "sm80_xmma_fprop_implicit_gemm_tf32f32_tf32f32_f32_nhwckrsc_nchw_tilesize64x32x64_stage5_warpsize2x2x1_g1_tensor16x8x8_alignc4_execute_kernel__5x_cudnn",
+        "kernel_ts": 5543702583674.036,
+        "kernel_dur": 14.305,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernelDataType_t)2>(cudnn::engines_precompiled::nchw2nhwc_params_t<float>, float const*, float*)",
+        "kernel_ts": 5543702585205.862,
+        "kernel_dur": 2.112,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernelDataType_t)2>(cudnn::engines_precompiled::nchw2nhwc_params_t<float>, float const*, float*)",
+        "kernel_ts": 5543702585212.87,
+        "kernel_dur": 8.96,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "sm80_xmma_fprop_implicit_gemm_tf32f32_tf32f32_f32_nhwckrsc_nchw_tilesize64x32x64_stage5_warpsize2x2x1_g1_tensor16x8x8_alignc4_execute_kernel__5x_cudnn",
+        "kernel_ts": 5543702585234.503,
+        "kernel_dur": 14.72,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernelDataType_t)2>(cudnn::engines_precompiled::nchw2nhwc_params_t<float>, float const*, float*)",
+        "kernel_ts": 5543702586926.33,
+        "kernel_dur": 2.177,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernelDataType_t)2>(cudnn::engines_precompiled::nchw2nhwc_params_t<float>, float const*, float*)",
+        "kernel_ts": 5543702586933.627,
+        "kernel_dur": 15.936,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "sm80_xmma_fprop_implicit_gemm_tf32f32_tf32f32_f32_nhwckrsc_nchw_tilesize64x32x64_stage5_warpsize2x2x1_g1_tensor16x8x8_alignc4_execute_kernel__5x_cudnn",
+        "kernel_ts": 5543702586955.163,
+        "kernel_dur": 17.664,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernelDataType_t)0>(cudnn::engines_precompiled::nchw2nhwc_params_t<float>, float const*, float*)",
+        "kernel_ts": 5543702588486.797,
+        "kernel_dur": 2.432,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "sm90_xmma_fprop_implicit_gemm_f32f32_tf32f32_f32_nhwckrsc_nhwc_tilesize64x64x32_warpgroupsize1x1x1_g1_execute_segment_k_off_kernel__5x_cudnn",
+        "kernel_ts": 5543702597215.027,
+        "kernel_dur": 6.816,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::engines_precompiled::nhwcToNchwKernel<float, float, float, true, false, (cudnnKernelDataType_t)0>(cudnn::engines_precompiled::nhwc2nchw_params_t<float>, float const*, float*)",
+        "kernel_ts": 5543702604041.7,
+        "kernel_dur": 2.144,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernelDataType_t)2>(cudnn::engines_precompiled::nchw2nhwc_params_t<float>, float const*, float*)",
+        "kernel_ts": 5543702604382.728,
+        "kernel_dur": 2.176,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernelDataType_t)2>(cudnn::engines_precompiled::nchw2nhwc_params_t<float>, float const*, float*)",
+        "kernel_ts": 5543702604388.712,
+        "kernel_dur": 15.361,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "sm80_xmma_fprop_implicit_gemm_tf32f32_tf32f32_f32_nhwckrsc_nchw_tilesize64x32x64_stage5_warpsize2x2x1_g1_tensor16x8x8_alignc4_execute_kernel__5x_cudnn",
+        "kernel_ts": 5543702604413.801,
+        "kernel_dur": 18.496,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernelDataType_t)2>(cudnn::engines_precompiled::nchw2nhwc_params_t<float>, float const*, float*)",
+        "kernel_ts": 5543702604556.586,
+        "kernel_dur": 2.144,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernelDataType_t)2>(cudnn::engines_precompiled::nchw2nhwc_params_t<float>, float const*, float*)",
+        "kernel_ts": 5543702604561.386,
+        "kernel_dur": 15.296,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "sm80_xmma_fprop_implicit_gemm_tf32f32_tf32f32_f32_nhwckrsc_nchw_tilesize64x32x64_stage5_warpsize2x2x1_g1_tensor16x8x8_alignc4_execute_kernel__5x_cudnn",
+        "kernel_ts": 5543702604580.235,
+        "kernel_dur": 17.664,
+        "device": 0,
+        "stream": 7
+      }
+    ]
+  },
+  {
+    "op_name": "aten::batch_norm",
+    "num_kernels": 20,
+    "kernels": [
+      {
+        "kernel_name": "void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, true, 1>(float, float, cudnnTensorStruct, float const*, cudnnTensorStruct, float*, cudnnTensorStruct, float const*, float const*, float const*, float const*, float)",
+        "kernel_ts": 5543702515402.959,
+        "kernel_dur": 8.001,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, true, 1>(float, float, cudnnTensorStruct, float const*, cudnnTensorStruct, float*, cudnnTensorStruct, float const*, float const*, float const*, float const*, float)",
+        "kernel_ts": 5543702559073.682,
+        "kernel_dur": 3.616,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, true, 1>(float, float, cudnnTensorStruct, float const*, cudnnTensorStruct, float*, cudnnTensorStruct, float const*, float const*, float const*, float const*, float)",
+        "kernel_ts": 5543702559423.926,
+        "kernel_dur": 3.648,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, true, 1>(float, float, cudnnTensorStruct, float const*, cudnnTensorStruct, float*, cudnnTensorStruct, float const*, float const*, float const*, float const*, float)",
+        "kernel_ts": 5543702570813.276,
+        "kernel_dur": 3.392,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, true, 1>(float, float, cudnnTensorStruct, float const*, cudnnTensorStruct, float*, cudnnTensorStruct, float const*, float const*, float const*, float const*, float)",
+        "kernel_ts": 5543702570976.414,
+        "kernel_dur": 3.456,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, true, 1>(float, float, cudnnTensorStruct, float const*, cudnnTensorStruct, float*, cudnnTensorStruct, float const*, float const*, float const*, float const*, float)",
+        "kernel_ts": 5543702573105.944,
+        "kernel_dur": 3.008,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, true, 1>(float, float, cudnnTensorStruct, float const*, cudnnTensorStruct, float*, cudnnTensorStruct, float const*, float const*, float const*, float const*, float)",
+        "kernel_ts": 5543702574868.844,
+        "kernel_dur": 2.816,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, true, 1>(float, float, cudnnTensorStruct, float const*, cudnnTensorStruct, float*, cudnnTensorStruct, float const*, float const*, float const*, float const*, float)",
+        "kernel_ts": 5543702577899.376,
+        "kernel_dur": 2.976,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, true, 1>(float, float, cudnnTensorStruct, float const*, cudnnTensorStruct, float*, cudnnTensorStruct, float const*, float const*, float const*, float const*, float)",
+        "kernel_ts": 5543702578131.763,
+        "kernel_dur": 2.912,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, true, 1>(float, float, cudnnTensorStruct, float const*, cudnnTensorStruct, float*, cudnnTensorStruct, float const*, float const*, float const*, float const*, float)",
+        "kernel_ts": 5543702578273.588,
+        "kernel_dur": 2.849,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, true, 1>(float, float, cudnnTensorStruct, float const*, cudnnTensorStruct, float*, cudnnTensorStruct, float const*, float const*, float const*, float const*, float)",
+        "kernel_ts": 5543702580082.41,
+        "kernel_dur": 2.88,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, true, 1>(float, float, cudnnTensorStruct, float const*, cudnnTensorStruct, float*, cudnnTensorStruct, float const*, float const*, float const*, float const*, float)",
+        "kernel_ts": 5543702581766.782,
+        "kernel_dur": 2.848,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, true, 1>(float, float, cudnnTensorStruct, float const*, cudnnTensorStruct, float*, cudnnTensorStruct, float const*, float const*, float const*, float const*, float)",
+        "kernel_ts": 5543702583364.305,
+        "kernel_dur": 3.04,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, true, 1>(float, float, cudnnTensorStruct, float const*, cudnnTensorStruct, float*, cudnnTensorStruct, float const*, float const*, float const*, float const*, float)",
+        "kernel_ts": 5543702583591.059,
+        "kernel_dur": 2.912,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, true, 1>(float, float, cudnnTensorStruct, float const*, cudnnTensorStruct, float*, cudnnTensorStruct, float const*, float const*, float const*, float const*, float)",
+        "kernel_ts": 5543702583731.957,
+        "kernel_dur": 2.912,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, true, 1>(float, float, cudnnTensorStruct, float const*, cudnnTensorStruct, float*, cudnnTensorStruct, float const*, float const*, float const*, float const*, float)",
+        "kernel_ts": 5543702585392.936,
+        "kernel_dur": 2.368,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, true, 1>(float, float, cudnnTensorStruct, float const*, cudnnTensorStruct, float*, cudnnTensorStruct, float const*, float const*, float const*, float const*, float)",
+        "kernel_ts": 5543702587113.885,
+        "kernel_dur": 2.368,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, true, 1>(float, float, cudnnTensorStruct, float const*, cudnnTensorStruct, float*, cudnnTensorStruct, float const*, float const*, float const*, float const*, float)",
+        "kernel_ts": 5543702604247.783,
+        "kernel_dur": 2.368,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, true, 1>(float, float, cudnnTensorStruct, float const*, cudnnTensorStruct, float*, cudnnTensorStruct, float const*, float const*, float const*, float const*, float)",
+        "kernel_ts": 5543702604491.497,
+        "kernel_dur": 2.337,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, true, 1>(float, float, cudnnTensorStruct, float const*, cudnnTensorStruct, float*, cudnnTensorStruct, float const*, float const*, float const*, float const*, float)",
+        "kernel_ts": 5543702604635.083,
+        "kernel_dur": 2.368,
+        "device": 0,
+        "stream": 7
+      }
+    ]
+  },
+  {
+    "op_name": "aten::relu_",
+    "num_kernels": 17,
+    "kernels": [
+      {
+        "kernel_name": "void at::native::vectorized_elementwise_kernel<4, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul> >(int, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul>)",
+        "kernel_ts": 5543702531778.608,
+        "kernel_dur": 2.784,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void at::native::vectorized_elementwise_kernel<4, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul> >(int, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul>)",
+        "kernel_ts": 5543702559124.083,
+        "kernel_dur": 1.856,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void at::native::vectorized_elementwise_kernel<4, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul> >(int, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul>)",
+        "kernel_ts": 5543702570596.57,
+        "kernel_dur": 1.76,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void at::native::vectorized_elementwise_kernel<4, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul> >(int, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul>)",
+        "kernel_ts": 5543702570848.445,
+        "kernel_dur": 1.824,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void at::native::vectorized_elementwise_kernel<4, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul> >(int, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul>)",
+        "kernel_ts": 5543702571014.431,
+        "kernel_dur": 1.824,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void at::native::vectorized_elementwise_kernel<4, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul> >(int, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul>)",
+        "kernel_ts": 5543702573143.96,
+        "kernel_dur": 1.664,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void at::native::vectorized_elementwise_kernel<4, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul> >(int, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul>)",
+        "kernel_ts": 5543702577964.401,
+        "kernel_dur": 1.632,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void at::native::vectorized_elementwise_kernel<4, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul> >(int, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul>)",
+        "kernel_ts": 5543702578156.051,
+        "kernel_dur": 1.664,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void at::native::vectorized_elementwise_kernel<4, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul> >(int, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul>)",
+        "kernel_ts": 5543702578305.109,
+        "kernel_dur": 1.664,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void at::native::vectorized_elementwise_kernel<4, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul> >(int, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul>)",
+        "kernel_ts": 5543702580120.202,
+        "kernel_dur": 1.632,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void at::native::vectorized_elementwise_kernel<4, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul> >(int, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul>)",
+        "kernel_ts": 5543702583432.529,
+        "kernel_dur": 1.6,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void at::native::vectorized_elementwise_kernel<4, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul> >(int, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul>)",
+        "kernel_ts": 5543702583615.764,
+        "kernel_dur": 1.663,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void at::native::vectorized_elementwise_kernel<4, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul> >(int, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul>)",
+        "kernel_ts": 5543702583763.861,
+        "kernel_dur": 1.6,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void at::native::vectorized_elementwise_kernel<4, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul> >(int, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul>)",
+        "kernel_ts": 5543702585439.785,
+        "kernel_dur": 1.664,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void at::native::vectorized_elementwise_kernel<4, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul> >(int, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul>)",
+        "kernel_ts": 5543702604311.592,
+        "kernel_dur": 1.567,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void at::native::vectorized_elementwise_kernel<4, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul> >(int, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul>)",
+        "kernel_ts": 5543702604516.714,
+        "kernel_dur": 1.76,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void at::native::vectorized_elementwise_kernel<4, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul> >(int, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul>)",
+        "kernel_ts": 5543702604667.628,
+        "kernel_dur": 1.76,
+        "device": 0,
+        "stream": 7
+      }
+    ]
+  },
+  {
+    "op_name": "aten::max_pool2d",
+    "num_kernels": 1,
+    "kernels": [
+      {
+        "kernel_name": "void at::native::(anonymous namespace)::max_pool_forward_nchw<float>(int, float const*, long, long, long, int, int, int, int, int, int, int, int, int, int, float*, long*)",
+        "kernel_ts": 5543702533119.744,
+        "kernel_dur": 6.176,
+        "device": 0,
+        "stream": 7
+      }
+    ]
+  },
+  {
+    "op_name": "aten::add_",
+    "num_kernels": 8,
+    "kernels": [
+      {
+        "kernel_name": "void at::native::vectorized_elementwise_kernel<4, at::native::CUDAFunctor_add<float>, std::array<char*, 3ul> >(int, at::native::CUDAFunctor_add<float>, std::array<char*, 3ul>)",
+        "kernel_ts": 5543702570524.857,
+        "kernel_dur": 1.952,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void at::native::vectorized_elementwise_kernel<4, at::native::CUDAFunctor_add<float>, std::array<char*, 3ul> >(int, at::native::CUDAFunctor_add<float>, std::array<char*, 3ul>)",
+        "kernel_ts": 5543702570996.766,
+        "kernel_dur": 1.857,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void at::native::vectorized_elementwise_kernel<4, at::native::CUDAFunctor_add<float>, std::array<char*, 3ul> >(int, at::native::CUDAFunctor_add<float>, std::array<char*, 3ul>)",
+        "kernel_ts": 5543702577935.728,
+        "kernel_dur": 1.697,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void at::native::vectorized_elementwise_kernel<4, at::native::CUDAFunctor_add<float>, std::array<char*, 3ul> >(int, at::native::CUDAFunctor_add<float>, std::array<char*, 3ul>)",
+        "kernel_ts": 5543702578288.533,
+        "kernel_dur": 1.632,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void at::native::vectorized_elementwise_kernel<4, at::native::CUDAFunctor_add<float>, std::array<char*, 3ul> >(int, at::native::CUDAFunctor_add<float>, std::array<char*, 3ul>)",
+        "kernel_ts": 5543702583397.361,
+        "kernel_dur": 1.664,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void at::native::vectorized_elementwise_kernel<4, at::native::CUDAFunctor_add<float>, std::array<char*, 3ul> >(int, at::native::CUDAFunctor_add<float>, std::array<char*, 3ul>)",
+        "kernel_ts": 5543702583746.997,
+        "kernel_dur": 1.632,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void at::native::vectorized_elementwise_kernel<4, at::native::CUDAFunctor_add<float>, std::array<char*, 3ul> >(int, at::native::CUDAFunctor_add<float>, std::array<char*, 3ul>)",
+        "kernel_ts": 5543702604282.695,
+        "kernel_dur": 1.664,
+        "device": 0,
+        "stream": 7
+      },
+      {
+        "kernel_name": "void at::native::vectorized_elementwise_kernel<4, at::native::CUDAFunctor_add<float>, std::array<char*, 3ul> >(int, at::native::CUDAFunctor_add<float>, std::array<char*, 3ul>)",
+        "kernel_ts": 5543702604650.379,
+        "kernel_dur": 1.728,
+        "device": 0,
+        "stream": 7
+      }
+    ]
+  },
+  {
+    "op_name": "aten::adaptive_avg_pool2d",
+    "num_kernels": 1,
+    "kernels": [
+      {
+        "kernel_name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::MeanOps<float, float, float, float>, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::MeanOps<float, float, float, float>, unsigned int, float, 4, 4>)",
+        "kernel_ts": 5543702620570.407,
+        "kernel_dur": 3.552,
+        "device": 0,
+        "stream": 7
+      }
+    ]
+  },
+  {
+    "op_name": "aten::linear",
+    "num_kernels": 1,
+    "kernels": [
+      {
+        "kernel_name": "std::enable_if<!(false), void>::type internal::gemvx::kernel<int, int, float, float, float, float, false, true, true, false, 7, false, cublasGemvParamsEx<int, cublasGemvTensorStridedBatched<float const>, cublasGemvTensorStridedBatched<float const>, cublasGemvTensorStridedBatched<float>, float> >(cublasGemvParamsEx<int, cublasGemvTensorStridedBatched<float const>, cublasGemvTensorStridedBatched<float const>, cublasGemvTensorStridedBatched<float>, float>)",
+        "kernel_ts": 5543702677589.799,
+        "kernel_dur": 5.568,
+        "device": 0,
+        "stream": 7
+      }
+    ]
+  }
+]

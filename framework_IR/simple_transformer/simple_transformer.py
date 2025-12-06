@@ -23,4 +23,4 @@ model = model.eval()
 # 假设序列长度 16，batch=1
 example_x = torch.randn(1, 16, d_model)
 
-export_and_draw_model(model, (example_x,), "simple_transformer")
+export_and_draw_model(model, (example_x,), "simple_transformer_dag")

@@ -61,7 +61,7 @@ def main():
     export_and_draw_model(
         model,
         (input_ids,),
-        "bert_tiny",
+        "bert_tiny_dag",
     )
 
 
